@@ -71,4 +71,16 @@
   .about-content {
     flex-direction: column;
   }
+
+  .stats .row > div:nth-child(2) .stat,
+  .stats .row > div:nth-child(4) .stat {
+    border: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Remove border from 3rd .stat element at md breakpoint */
+  .stats .row > div:nth-child(3) .stat {
+    border: none !important;
+  }
 }
